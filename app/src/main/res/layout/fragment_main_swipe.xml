@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.ufam.gather4u.activities.fragments.MainSwipeFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:gravity="center_horizontal|center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_card"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_information_outline"
+                android:background="@color/white"
+                android:layout_marginStart="10dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/title_main_pendentes"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/helpText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/msg_help_coletas_part_pendentes"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="82dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/item_entrega_list" />
+
+    </LinearLayout>
+
+</FrameLayout>

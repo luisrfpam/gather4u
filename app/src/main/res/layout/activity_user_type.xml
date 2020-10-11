@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.ufam.gather4u.activities.UserTypeChoiceActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+
+            android:id="@+id/ll_user_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="8.73"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/participante_button"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:forceHasOverlappingRendering="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_participante_xxxhdpi"
+                android:text="@string/button_enter"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/button_user_participante"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_info_participante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/msg_info_participante"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/coletor_button"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:forceHasOverlappingRendering="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_empresa_xxxhdpi"
+                android:text="@string/button_new_user"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/button_user_coletor"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_info_coletor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/msg_info_coletor"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

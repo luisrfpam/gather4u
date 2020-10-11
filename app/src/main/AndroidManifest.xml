@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.ufam.gather4u">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name=".activities.event.EventsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CheckListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.event.EventDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.alert.AlertsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.alert.AlertDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.GoogleApiClientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FirstChoiceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".activities.UserTypeChoiceActivity"
+            android:label="@string/title_activity_usertype"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RememberLoginActivity"
+            android:label="@string/title_activity_rememberme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserEntregadorCadActivity"
+            android:label="@string/title_activity_cad_participante"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserEntregadorEditBasicosActivity"
+            android:label="@string/title_activity_edit_dados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserEntregadorEditEnderecoActivity"
+            android:label="@string/title_activity_edit_endereco"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NovaEntregaActivity"
+            android:label="@string/title_activity_nova_entrega"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EntregaDetailActivity"
+            android:label="@string/title_detalhe_entrega"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.UserColetorEditBasicosActivity"
+            android:label="@string/title_edit_coletor_dados"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.ColetaFinalActivity"
+            android:label="@string/title_detalhe_entrega"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ColetaDetailActivity"
+            android:label="@string/title_detalhe_coleta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ColetaAvaliacaoActivity"
+            android:label="@string/title_aval_coleta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserColetorCadActivity"
+            android:label="@string/title_activity_cad_coletor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserColetorEditResiduoActivity"
+            android:label="@string/title_activity_edit_residuos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserColetorEditRegiaoActivity"
+            android:label="@string/title_activity_edit_regioes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserColetorEditActivity"
+            android:label="@string/title_activity_edit_dados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserLocationActivity"
+            android:label="@string/title_edit_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserUpdatePasswordActivity"
+            android:label="@string/title_edit_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+
+</manifest>

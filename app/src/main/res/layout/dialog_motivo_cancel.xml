@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rouded_dialog"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@color/primaryDark"
+            android:textStyle="bold" />
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_motivo"
+                    android:inputType="textMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="fill"
+                    android:minEms="1"
+                    android:textAlignment="center"
+                    android:hint="@string/hint_field_motivo"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="16sp"
+                    android:maxLength="500"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout5">
+
+                <Button
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/btn_cancel"
+                        android:src="@drawable/ic_pencil"
+                        android:scaleType="fitCenter"
+                        android:background="@color/primaryDark"
+                        android:text="CANCELAR"
+                        android:textColor="@color/white"
+                        android:contentDescription="@string/image_button_description"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="15dp"
+                        android:textSize="12sp"/>
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/btn_motivo_ok"
+                        android:src="@drawable/ic_pencil"
+                        android:scaleType="fitCenter"
+                        android:background="@color/primaryDark"
+                        android:text="OK"
+                        android:textColor="@color/white"
+                        android:contentDescription="@string/image_button_description"
+                        android:layout_gravity="end"
+                        android:textSize="12sp"/>
+
+            </LinearLayout>
+</LinearLayout>

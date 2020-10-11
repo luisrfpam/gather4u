@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/white"
+                app:civ_border_color="@color/white"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_label_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_field_id"/>
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+
+                <TextView
+                android:id="@+id/tv_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entregador"
+                android:textSize="16sp"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_logradouro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logradouro"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_label_peso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_field_peso"/>
+
+                <TextView
+                    android:id="@+id/tv_peso"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.00" />
+
+                <TextView
+                    android:id="@+id/tv_label_kg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kg"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_dtcad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textAlignment="textEnd"
+                android:text="@string/event_created_at"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/view" />
+
+</LinearLayout>

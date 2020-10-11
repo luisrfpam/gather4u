@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_upddata"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="Atualizar Dados" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_updloc"-->
+            <!--android:icon="@drawable/ic_location_on_white_24dp"-->
+            <!--android:title="Localização" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_updpassword"-->
+            <!--android:icon="@drawable/ic_vpn_key_white_24dp"-->
+            <!--android:title="Atualizar Senha" />-->
+    <!--</group>-->
+    <item android:title="Atualizar Dados">
+        <menu>
+            <item
+                android:id="@+id/nav_upddadosbasicos"
+                android:icon="@drawable/ic_participante_hdpi"
+                android:title="Dados Básicos" />
+            <item
+                android:id="@+id/nav_updendereco"
+                android:icon="@drawable/ic_endereco_hdpi"
+                android:title="Endereço" />
+            <item
+                android:id="@+id/nav_updresiduos"
+                android:icon="@drawable/ic_lixo_preto_hdpi"
+                android:title="Resíduos" />
+            <item
+                android:id="@+id/nav_updregioes"
+                android:icon="@drawable/ic_mapa_hdpi"
+                android:title="Regiões" />
+            <item
+                android:id="@+id/nav_updloc"
+                android:icon="@drawable/ic_distancia_hdpi"
+                android:title="Localização" />
+            <item
+                android:id="@+id/nav_updpassword"
+                android:icon="@drawable/ic_key_hdpi"
+                android:title="Atualizar Senha" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit_hdpi"
+                android:title="Sair" />
+        </menu>
+    </item>
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</menu>

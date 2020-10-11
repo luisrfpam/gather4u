@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/title_view"
+        android:gravity="center_horizontal|center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_bg_over">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:id="@+id/iv_card"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:contentDescription="@string/title_cad_coletor_regioes"
+                android:src="@drawable/ic_mapa_xhdpi"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_card"
+                android:visibility="gone"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:src="@drawable/ic_infobasico_hdpi"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/white"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="0dp"
+            android:paddingEnd="30dp"
+            android:layout_gravity="center|clip_horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/title_cad_coletor_regioes"/>
+
+        </LinearLayout>
+
+    </LinearLayout>

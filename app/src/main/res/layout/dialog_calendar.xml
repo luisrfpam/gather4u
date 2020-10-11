@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rouded_dialog"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@color/primaryDark"
+            android:textStyle="bold" />
+
+        <CalendarView
+            android:id="@+id/cv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:showWeekNumber="false">
+        </CalendarView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_select"
+            android:src="@drawable/ic_pencil"
+            android:scaleType="fitCenter"
+            android:background="@color/primaryDark"
+            android:text="SELECIONAR"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="12sp"/>
+
+    </LinearLayout>

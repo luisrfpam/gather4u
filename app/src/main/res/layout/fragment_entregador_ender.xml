@@ -1,0 +1,244 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:fillViewport="true"
+    android:weightSum="1"
+    android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_edit_entregador_ender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/title_view"
+                android:background="@drawable/rounded_bg_over"
+                android:gravity="center_horizontal|center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_card"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/title_cad_participante_ender"
+                        android:src="@drawable/ic_endereco_hdpi"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="20dp"
+                    android:layout_gravity="center|clip_horizontal">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/title_cad_participante_ender"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/input_cep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="@string/hint_field_cep"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:textSize="18sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_logradouro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="@string/hint_field_logradouro"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:textSize="18sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_nr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="@string/hint_field_nr"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="18sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_complemento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="@string/hint_field_comp"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:textSize="18sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryDark">
+
+                <TextView
+                    android:id="@+id/lbl_estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hint_field_estado" />
+
+                <Spinner
+                    android:id="@+id/input_estado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="@string/hint_field_estado_prompt"
+                    android:maxLines="1"
+                    android:prompt="@string/hint_field_estado_prompt"
+                    android:spinnerMode="dropdown"
+                    android:textStyle="bold"
+                    android:background="@color/md_green_100"
+                    android:textSize="18sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryDark">
+
+                <TextView
+                    android:id="@+id/lbl_cidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hint_field_cidade" />
+
+                <Spinner
+                    android:id="@+id/input_cidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="@string/hint_field_cidade_prompt"
+                    android:maxLines="1"
+                    android:prompt="@string/hint_field_cidade_prompt"
+                    android:spinnerMode="dropdown"
+                    android:textStyle="bold"
+                    android:background="@color/md_green_100"
+                    android:textSize="18sp"  />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryDark">
+
+                <TextView
+                    android:id="@+id/lbl_bairro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hint_field_bairro" />
+
+                <Spinner
+                    android:id="@+id/input_bairro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="@string/hint_field_bairro_prompt"
+                    android:maxLines="1"
+                    android:prompt="@string/hint_field_bairro_prompt"
+                    android:spinnerMode="dropdown"
+                    android:textStyle="bold"
+                    android:background="@color/md_green_100"
+                    android:textSize="18sp"  />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_botoes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <!--android:layout_alignParentBottom="true"-->
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_weight="1"
+                    android:background="@color/primary"
+                    android:text="@string/button_save_new_user"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,239 @@
+<resources>
+    <string name="app_name">Gather4u</string>
+    <string name="company">Universidade Federal do Amazonas</string>
+    <string name="client">Luis RFP - AM</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Configurações</string>
+
+    <!--titles-->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_google_api_client">Localização do Aparelho</string>
+    <string name="title_activity_rememberme">Esqueci meus dados de login</string>
+    <string name="title_activity_usertype">Selecione o tipo de perfil</string>
+    <string name="title_activity_login">Acesse Gather4u</string>
+    <string name="title_activity_cad_participante">Cadastro de Participante</string>
+    <string name="title_activity_cad_coletor">Cadastro de Coletor</string>
+    <string name="title_activity_user_location">Localização</string>
+
+    <string name="title_activity_edit_dados">Atualização de Dados</string>
+    <string name="title_activity_edit_endereco">Atualização do Endereço</string>
+    <string name="title_activity_edit_residuos">Atualização dos Resíduos</string>
+    <string name="title_activity_edit_regioes">Atualização das Regiões</string>
+
+    <string name="title_activity_nova_entrega">Nova Entrega</string>
+
+    <!--buttons-->
+    <string name="button_enter">Entrar</string>
+    <string name="button_new_user">Nova Conta</string>
+    <string name="button_next_page">Próximo</string>
+    <string name="button_update_user">Atualizar</string>
+    <string name="button_save_new_user">Cadastrar</string>
+    <string name="button_save_user">Salvar</string>
+    <string name="button_change">Trocar</string>
+    <string name="button_select_camera">Tirar uma foto</string>
+    <string name="button_select_galery">Escolher da galeria</string>
+    <string name="button_user">Usuário</string>
+    <string name="button_events">Eventos</string>
+    <string name="button_alerts">Alertas</string>
+    <string name="button_logout">Sair</string>
+    <string name="button_login">Entrar</string>
+    <string name="button_close">Fechar</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_location">Local</string>
+    <string name="button_user_participante">Participante</string>
+    <string name="button_user_coletor">Coletor</string>
+    <string name="button_remember_send">Enviar E-Mail</string>
+
+    <string name="button_distance">Distância</string>
+    <string name="button_duration">Duração</string>
+    <string name="button_coletar">Coletar</string>
+    <string name="button_finalizar">Finalizar</string>
+    <string name="button_avaliar">Avaliar</string>
+    <string name="button_confirmar">Confirmar</string>
+
+    <string name="button_add">Adicionar</string>
+    <string name="button_del">Remover</string>
+
+    <string name="button_endereco_cad">Usar meu endereço de cadastro</string>
+
+    <!--snacks-->
+    <string name="label_snack_must_permit_camera">Você precisa autorizar o uso da câmera para tirar fotos</string>
+    <string name="label_snack_must_permit_galery">Você precisa autorizar o acesso aos arquivos e mídias para escolher a foto.</string>
+
+    <!-- messages -->
+    <string name="msg_info_participante">Entregue seus resíduos</string>
+    <string name="msg_info_coletor">Colete resíduos</string>
+
+    <string name="title_recicle_01">Salve o Planeta</string>
+    <string name="title_recicle_02">Pense no Futuro</string>
+    <string name="title_recicle_03">Responsabilidade Social</string>
+    <string name="msg_recicle_01">Semeie atitude e salve o planeta. Recicle!</string>
+    <string name="msg_recicle_02">Eu separo o lixo de forma sustentável, sendo responsável, pensando nas gerações futuras.</string>
+    <string name="msg_recicle_03">A responsabilidade social e a preservação ambiental significam um compromisso com a vida.</string>
+
+    <string name="msg_label_remember">Recupere sua senha</string>
+    <string name="msg_label_new_user">Criar nova conta</string>
+
+    <string name="title_main_pendentes">Entregas Pendentes</string>
+    <string name="title_main_aceitas">Entregas Aceitas</string>
+    <string name="title_main_realizadas">Entregas Realizadas</string>
+    <string name="title_main_coletas_aceitas">Coletas Aceitas</string>
+    <string name="title_main_coletas_realizadas">Coletas Realizadas</string>
+
+    <string name="msg_help_coletas_part_pendentes">Entregas criadas recentemente.</string>
+    <string name="msg_help_coletas_part_aceitas">Entregas aceitas pelo coletor ainda não finalizadas.</string>
+    <string name="msg_help_coletas_part_realizados">Entregas finalizadas pelo coletor.</string>
+
+    <string name="msg_help_coletas_colet_aceitas">Pedidos de coletas aceitas pelo coletor.</string>
+    <string name="msg_help_coletas_colet_realizados">Pedidos de coletas finalizados pelo coletor.</string>
+
+    <string name="title_cad_participante_dados">Informe os dados básicos</string>
+    <string name="title_cad_participante_ender">Informe seu endereço</string>
+
+    <string name="title_cad_coletor_dados">Informe os dados básicos</string>
+    <string name="title_cad_coletor_ender">Informe o endereço</string>
+    <string name="title_cad_coletor_local">Informe o local</string>
+    <string name="title_cad_entrega_local">Informe o local da entrega</string>
+    <string name="title_cad_coletor_residuos">Informe os resíduos</string>
+    <string name="title_cad_coletor_regioes">Informe as regiões atendidas</string>
+
+    <string name="title_edit_participante_dados">Altere os dados básicos</string>
+    <string name="title_edit_participante_ender">Altere seu endereço</string>
+
+    <string name="title_edit_coletor_dados">Altere os dados básicos</string>
+    <string name="title_edit_coletor_ender">Altere o endereço</string>
+    <string name="title_edit_coletor_residuos">Altere os resíduos</string>
+    <string name="title_edit_coletor_regioes">Altere as regiões atendidas</string>
+
+    <string name="title_cad_entrega_disponibilidade">Informe a disponibilidade</string>
+
+    <string name="title_detalhe_entrega">Detalhe da entrega</string>
+    <string name="title_detalhe_coleta">Detalhe da coleta</string>
+    <string name="title_aval_coleta">Avaliação da Coleta</string>
+    <string name="title_final_coleta">Finaliação da Coleta</string>
+    <string name="title_edit_location">Atualização da localização</string>
+    <string name="title_edit_password">Atualização de senha</string>
+
+    <string name="title_edit_descricao_aval">Digite sua opinião</string>
+
+    <!--hint fields-->
+    <string name="hint_field_login">Login</string>
+    <string name="hint_field_password">Senha</string>
+    <string name="hint_field_confirmation">Confirme a senha</string>
+    <string name="hint_field_fullname">Nome completo</string>
+    <string name="hint_field_location">Localização</string>
+    <string name="hint_field_tipo_user">Tipo cadastro</string>
+    <string name="hint_field_perfil">Perfil</string>
+
+    <string name="hint_field_latitude">Latitude</string>
+    <string name="hint_field_longitude">Longitude</string>
+
+    <string name="hint_field_cpf">CPF</string>
+    <string name="hint_field_cnpj">CNPJ</string>
+    <string name="hint_field_cep">CEP</string>
+    <string name="hint_field_genero">Gênero</string>
+    <string name="hint_field_logradouro">Logradouro</string>
+    <string name="hint_field_nr">Nro.</string>
+    <string name="hint_field_comp">Complemento</string>
+    <string name="hint_field_bairro">Bairro</string>
+    <string name="hint_field_cidade">Cidade</string>
+    <string name="hint_field_estado">Estado</string>
+    <string name="hint_field_tiporesid">Tipo Residência</string>
+    <string name="hint_field_pais">País</string>
+    <string name="hint_field_email">E-mail contato</string>
+    <string name="hint_field_whatsapp">WhatsApp</string>
+    <string name="hint_field_telefone">Telefone</string>
+    <string name="hint_field_dtnasc">Data de Nascimento</string>
+    <string name="hint_field_regioes">Regiões</string>
+    <string name="hint_field_regiao">Região</string>
+
+    <string name="hint_field_id">Id</string>
+    <string name="hint_field_peso">Peso</string>
+    <string name="hint_field_pontos">Pontos</string>
+    <string name="hint_field_tpresid">Tipo Residência</string>
+    <string name="hint_field_dtdisp">Data de Disponibilidade</string>
+    <string name="hint_field_obs">Observação</string>
+
+    <string name="hint_field_disponib">Disponibilidade</string>
+    <string name="hint_field_residuos">Resíduos</string>
+
+    <string name="hint_field_hrini">Hora Inicial</string>
+    <string name="hint_field_hrfim">Hora Final</string>
+
+    <string name="hint_rating_avaliacao">Avaliação</string>
+    <string name="hint_rating_odiei">Odiei</string>
+    <string name="hint_rating_nao_gostei">Não Gostei</string>
+    <string name="hint_rating_satisfatoria">Satisfatório</string>
+    <string name="hint_rating_gostei">Gostei</string>
+    <string name="hint_rating_adorei">Adorei</string>
+
+    <!-- Coletor -->
+    <string name="hint_field_nomefantasia">Nome fantasia</string>
+    <string name="hint_field_razaosocial">Razão Social</string>
+    <string name="hint_field_tipo_empr">Tipo de empresa</string>
+
+    <!-- SPINNERS -->
+    <string name="hint_field_type_prompt">Selecione o tipo de cadastro</string>
+    <string name="hint_field_tipo_emp_prompt">Selecione o tipo de empresa</string>
+    <string name="hint_field_perfil_prompt">Selecione o perfil do cadastro</string>
+    <string name="hint_field_genero_prompt">Selecione o gênero</string>
+    <string name="hint_field_estado_prompt">Selecione o estado</string>
+    <string name="hint_field_cidade_prompt">Selecione a cidade</string>
+    <string name="hint_field_bairro_prompt">Selecione o bairro</string>
+    <string name="hint_field_regiao_prompt">Selecione o região</string>
+    <string name="hint_field_tiporesid_prompt">Selecione o tipo de residência</string>
+    <string name="hint_field_motivo">Informe o motivo</string>
+
+    <!--descriptions-->
+    <string name="image_button_description">Image button</string>
+    <string name="event_name">Nome do evento</string>
+    <string name="event_description">Descrição do evento</string>
+    <string name="event_created_at">01/01/2017</string>
+    <string name="alert_name">Nome do alerta</string>
+    <string name="alert_descriṕtion">Descrição do alerta</string>
+    <string name="alert_created_at">01/01/2017</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.</string>
+
+
+    <!--toolbars-->
+    <string name="subtitle_tootlbar_edit_user">Dados do usuário</string>
+    <string name="subtitle_tootlbar_events_list">Eventos registrados</string>
+    <string name="subtitle_tootlbar_alerts_list">Alertas registrados</string>
+    <string name="subtitle_tootlbar_alert_details">Detalhes do alerta</string>
+    <string name="subtitle_tootlbar_event_details">Detalhes do evento</string>
+
+    <string name="subtitle_tootlbar_entrega_details">Detalhes da entrega</string>
+    <string name="subtitle_tootlbar_coleta_details">Detalhes da coleta</string>
+    <string name="subtitle_tootlbar_confirma_residuos">Confirmação dos resíduos</string>
+    <string name="subtitle_tootlbar_finalizar_coleta">Confirme os resíduoes coletados</string>
+    <string name="subtitle_tootlbar_avaliar_coleta">Avalie esta coleta</string>
+    <string name="subtitle_tootlbar_avaliar_entrega">Avalie esta entrega</string>
+
+    <!-- spinners entries -->
+    <string-array name="user_type_arrays">
+        <item>Física</item>
+        <item>Jurídica</item>
+    </string-array>
+
+    <string-array name="user_perfil_arrays">
+        <item>Coletor</item>
+        <item>Entregador</item>
+    </string-array>
+
+    <string-array name="user_genero_arrays">
+        <item>Não selecionado</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+
+    <string-array name="user_tipo_emp_arrays">
+        <item>Empresa</item>
+        <item>Cooperativa</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

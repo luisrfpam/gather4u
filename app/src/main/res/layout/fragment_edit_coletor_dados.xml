@@ -1,0 +1,272 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:fillViewport="true"
+    android:weightSum="1"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/title_view"
+            android:gravity="center_horizontal|center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/rounded_bg_over"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_card"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/title_cad_coletor_dados"
+                    android:src="@drawable/ic_infobasico_hdpi"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:layout_gravity="center|clip_horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-light"
+                    android:maxLines="1"
+                    android:text="@string/title_edit_coletor_dados"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/avatar_default"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_account"
+                android:scaleType="centerCrop"
+                android:foreground="?android:attr/selectableItemBackground"
+                />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="24dp"
+                android:id="@+id/btn_edit_image"
+                android:src="@drawable/ic_pencil"
+                android:scaleType="fitCenter"
+                android:background="@color/opacity1"
+                android:text="@string/button_change"
+                android:textColor="@color/white"
+                android:contentDescription="@string/image_button_description"
+                android:layout_alignParentBottom="true"
+                android:layout_alignEnd="@+id/iv_account"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+            android:id="@+id/input_fantasy_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/hint_field_nomefantasia"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_razao_social"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/hint_field_razaosocial"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/hint_field_login"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/hint_field_cnpj"
+                android:maxLines="1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/input_cnpj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/hint_field_cnpj"
+                android:maxLines="1"
+                android:textSize="18sp"
+                android:layout_marginBottom="15dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/hint_field_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_whatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/hint_field_whatsapp"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/input_telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/hint_field_telefone"
+                android:maxLines="1"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_tipo_emp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hint_field_tipo_empr" />
+
+            <Spinner
+                android:id="@+id/input_tipo_emp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:entries="@array/user_tipo_emp_arrays"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/hint_field_tipo_empr"
+                android:maxLines="2"
+                android:prompt="@string/hint_field_tipo_emp_prompt"
+                android:spinnerMode="dropdown"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_botoes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <!--android:layout_alignParentBottom="true"-->
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:background="@color/primary"
+                android:text="@string/button_next_page"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>

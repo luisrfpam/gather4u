@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    tools:context="org.ufam.gather4u.activities.SplashActivity"
+    android:background="@color/white"
+    android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="319dp"
+            app:srcCompat="@drawable/web_512x512"
+            android:layout_weight="0.05" />
+
+        <ImageView
+            android:id="@+id/ic_textLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_logo_xxxhdpi" />
+
+</LinearLayout>
